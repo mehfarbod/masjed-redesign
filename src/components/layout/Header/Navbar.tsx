@@ -1,6 +1,7 @@
-import NavItem from "./NavItem";
-import Dropdown from "./Dropdown";
 import { navigationItems } from "@/constants/navigation";
+
+import Dropdown from "./Dropdown";
+import NavItem from "./NavItem";
 
 export default function Navbar() {
   return (

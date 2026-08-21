@@ -1,4 +1,5 @@
 import Link from "next/link";
+
 import { ArrowLeft, Newspaper } from "lucide-react";
 
 type ServiceCardProps = {
@@ -23,43 +24,51 @@ export default function ServiceCard({
         flex-col
         rounded-2xl
         border
-        border-slate-200
+        border-[#E7E0D5]
         bg-white
-        p-5
+        p-4
         transition-all
         duration-300
         hover:-translate-y-1
+        hover:border-[#D5CCBF]
         hover:shadow-md
+        sm:p-5
       "
     >
       {/* Icon */}
       <div
         className="
-          mb-4
+          mb-3
           flex
           h-10
           w-10
+          shrink-0
           items-center
           justify-center
           rounded-xl
-          bg-teal-50
-          text-teal-700
+          bg-[#EEF0E9]
+          text-[#7A8270]
           transition-colors
           duration-300
-          group-hover:bg-teal-700
+          group-hover:bg-[#7A8270]
           group-hover:text-white
+          sm:mb-4
         "
       >
         <Newspaper size={20} />
       </div>
 
       {/* Content */}
-      <h3 className="mb-2 text-base font-bold text-slate-800">{title}</h3>
+      <h3 className="mb-1.5 text-base font-bold text-[#302A24] sm:mb-2">
+        {title}
+      </h3>
 
-      <p className="text-sm leading-6 text-slate-500">{description}</p>
+      <p className="text-sm leading-6 text-[#756D63]">
+        {description}
+      </p>
 
       {/* Actions */}
-      <div className="mt-auto flex flex-col gap-2 pt-5">
+      <div className="mt-auto flex flex-col gap-1.5 pt-4 sm:gap-2 sm:pt-5">
         <Link
           href={href}
           className="
@@ -67,14 +76,15 @@ export default function ServiceCard({
             items-center
             justify-between
             rounded-xl
-            bg-teal-700
+            bg-[#70543A]
             px-3
-            py-2.5
+            py-2
             text-sm
             font-semibold
             text-white
             transition-colors
-            hover:bg-teal-800
+            hover:bg-[#5A422D]
+            sm:py-2.5
           "
         >
           ورود به بخش
@@ -90,13 +100,14 @@ export default function ServiceCard({
               justify-center
               rounded-xl
               px-3
-              py-2
+              py-1.5
               text-xs
               font-medium
-              text-slate-500
+              text-[#756D63]
               transition-colors
-              hover:bg-teal-50
-              hover:text-teal-700
+              hover:bg-[#EEF0E9]
+              hover:text-[#70543A]
+              sm:py-2
             "
           >
             آخرین مطلب

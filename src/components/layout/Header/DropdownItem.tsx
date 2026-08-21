@@ -1,4 +1,5 @@
 import Link from "next/link";
+
 import type { NavigationChild } from "@/constants/navigation";
 
 type DropdownItemProps = {
@@ -30,13 +31,14 @@ export default function DropdownItem({
           flex
           h-10
           w-10
+          shrink-0
           items-center
           justify-center
           rounded-lg
-          bg-teal-50
-          text-teal-700
+          bg-[#EEF0E9]
+          text-[#7A8270]
           transition-colors
-          group-hover:bg-teal-700
+          group-hover:bg-[#7A8270]
           group-hover:text-white
         "
       >

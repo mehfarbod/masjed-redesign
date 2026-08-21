@@ -1,4 +1,3 @@
-import Link from "next/link";
 import { ChevronDown } from "lucide-react";
 
 import type { NavigationItem } from "@/constants/navigation";
@@ -23,7 +22,7 @@ export default function Dropdown({
           font-medium
           text-slate-700
           transition-colors
-          hover:text-teal-700
+          hover:text-[#7A8270]
         "
       >
         {item.label}
@@ -31,10 +30,10 @@ export default function Dropdown({
         <ChevronDown
           size={16}
           className="
+            z-10
             transition-transform
             duration-200
             group-hover:rotate-180
-            z-
           "
         />
       </button>
@@ -45,6 +44,7 @@ export default function Dropdown({
           absolute
           right-0
           top-full
+          z-10
           mt-0
           w-80
           rounded-2xl
@@ -58,7 +58,6 @@ export default function Dropdown({
           duration-200
           group-hover:visible
           group-hover:opacity-100
-          z-1
         "
       >
         {item.children?.map((child) => (

@@ -5,7 +5,10 @@ type NavItemProps = {
   href: string;
 };
 
-export default function NavItem({ label, href }: NavItemProps) {
+export default function NavItem({
+  label,
+  href,
+}: NavItemProps) {
   return (
     <Link
       href={href}
@@ -13,12 +16,11 @@ export default function NavItem({ label, href }: NavItemProps) {
         relative
         py-2
         text-sm
-        
         font-medium
         text-slate-700
         transition-colors
         duration-200
-        hover:text-teal-700
+        hover:text-[#7A8270]
       "
     >
       {label}

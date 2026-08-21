@@ -5,26 +5,26 @@ import { navigationItems } from "@/constants/navigation";
 
 export default function Footer() {
   return (
-    <footer className="mt-12 border-t border-teal-200 bg-teal-100">
+    <footer className="mt-12 border-t border-[#E3D9CB] bg-[#F1ECE3]">
       <Container>
         <div className="flex flex-col gap-8 py-10 md:flex-row md:items-center md:justify-between">
           {/* Brand */}
           <div>
             <Link
               href="/"
-              className="text-lg font-bold text-slate-800"
+              className="text-lg font-bold text-[#302A24]"
             >
               سامانه جامع مساجد
             </Link>
 
-            <p className="mt-2 max-w-md text-sm leading-7 text-slate-500">
+            <p className="mt-2 max-w-md text-sm leading-7 text-[#756D63]">
               سامانه جامع اطلاعات و خدمات مساجد
             </p>
           </div>
 
           {/* Contact & Social */}
           <div className="flex flex-col gap-4">
-            <span className="text-sm font-semibold text-slate-700">
+            <span className="text-sm font-semibold text-[#302A24]">
               ارتباط با ما
             </span>
 
@@ -33,7 +33,7 @@ export default function Footer() {
         </div>
 
         {/* Navigation */}
-        <div className="border-t border-slate-100 py-6">
+        <div className="border-t border-[#E3D9CB] py-6">
           <nav>
             <ul className="flex flex-wrap gap-x-6 gap-y-3">
               {navigationItems.map((item) => {
@@ -44,9 +44,9 @@ export default function Footer() {
                         href={item.href}
                         className="
                           text-sm
-                          text-slate-500
+                          text-[#756D63]
                           transition-colors
-                          hover:text-teal-700
+                          hover:text-[#70543A]
                         "
                       >
                         {item.label}
@@ -61,9 +61,9 @@ export default function Footer() {
                       href={child.href}
                       className="
                         text-sm
-                        text-slate-500
+                        text-[#756D63]
                         transition-colors
-                        hover:text-teal-700
+                        hover:text-[#70543A]
                       "
                     >
                       {child.label}
@@ -76,7 +76,7 @@ export default function Footer() {
         </div>
 
         {/* Copyright */}
-        <div className="border-t border-slate-100 py-5 text-center text-xs text-slate-400">
+        <div className="border-t border-[#E3D9CB] py-5 text-center text-xs text-[#93897D]">
           © 2026 سامانه جامع مساجد. تمامی حقوق محفوظ است.
         </div>
       </Container>

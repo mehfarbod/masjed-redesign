@@ -24,7 +24,15 @@ export default function Header() {
 
           {/* Desktop Search */}
           <button
-            className="hidden shrink-0 rounded-lg p-2 transition-colors hover:bg-slate-100 md:block"
+            className="
+              hidden
+              shrink-0
+              rounded-lg
+              p-2
+              transition-colors
+              hover:bg-slate-100
+              md:block
+            "
             aria-label="جستجو"
           >
             <Search size={20} />
@@ -33,7 +41,12 @@ export default function Header() {
           {/* Mobile Actions */}
           <div className="flex items-center gap-1 md:hidden">
             <button
-              className="rounded-lg p-2 transition-colors hover:bg-slate-100"
+              className="
+                rounded-lg
+                p-2
+                transition-colors
+                hover:bg-slate-100
+              "
               aria-label="جستجو"
             >
               <Search size={20} />
@@ -41,7 +54,12 @@ export default function Header() {
 
             <button
               onClick={() => setIsMenuOpen((prev) => !prev)}
-              className="rounded-lg p-2 transition-colors hover:bg-slate-100"
+              className="
+                rounded-lg
+                p-2
+                transition-colors
+                hover:bg-slate-100
+              "
               aria-label={isMenuOpen ? "بستن منو" : "باز کردن منو"}
             >
               {isMenuOpen ? <X size={22} /> : <Menu size={22} />}
@@ -56,7 +74,17 @@ export default function Header() {
               <a
                 href="/"
                 onClick={() => setIsMenuOpen(false)}
-                className="rounded-xl px-4 py-3 text-sm font-medium text-slate-700 transition-colors hover:bg-slate-50 hover:text-teal-700"
+                className="
+                  rounded-xl
+                  px-4
+                  py-3
+                  text-sm
+                  font-medium
+                  text-slate-700
+                  transition-colors
+                  hover:bg-slate-50
+                  hover:text-[#7A8270]
+                "
               >
                 خانه
               </a>
@@ -64,7 +92,17 @@ export default function Header() {
               <a
                 href="/news"
                 onClick={() => setIsMenuOpen(false)}
-                className="rounded-xl px-4 py-3 text-sm font-medium text-slate-700 transition-colors hover:bg-slate-50 hover:text-teal-700"
+                className="
+                  rounded-xl
+                  px-4
+                  py-3
+                  text-sm
+                  font-medium
+                  text-slate-700
+                  transition-colors
+                  hover:bg-slate-50
+                  hover:text-[#7A8270]
+                "
               >
                 مسجد خبر
               </a>
@@ -72,7 +110,17 @@ export default function Header() {
               <a
                 href="/culture"
                 onClick={() => setIsMenuOpen(false)}
-                className="rounded-xl px-4 py-3 text-sm font-medium text-slate-700 transition-colors hover:bg-slate-50 hover:text-teal-700"
+                className="
+                  rounded-xl
+                  px-4
+                  py-3
+                  text-sm
+                  font-medium
+                  text-slate-700
+                  transition-colors
+                  hover:bg-slate-50
+                  hover:text-[#7A8270]
+                "
               >
                 مسجد فرهنگ
               </a>
@@ -80,7 +128,17 @@ export default function Header() {
               <a
                 href="/education"
                 onClick={() => setIsMenuOpen(false)}
-                className="rounded-xl px-4 py-3 text-sm font-medium text-slate-700 transition-colors hover:bg-slate-50 hover:text-teal-700"
+                className="
+                  rounded-xl
+                  px-4
+                  py-3
+                  text-sm
+                  font-medium
+                  text-slate-700
+                  transition-colors
+                  hover:bg-slate-50
+                  hover:text-[#7A8270]
+                "
               >
                 مسجد آموز
               </a>
@@ -88,7 +146,17 @@ export default function Header() {
               <a
                 href="/media"
                 onClick={() => setIsMenuOpen(false)}
-                className="rounded-xl px-4 py-3 text-sm font-medium text-slate-700 transition-colors hover:bg-slate-50 hover:text-teal-700"
+                className="
+                  rounded-xl
+                  px-4
+                  py-3
+                  text-sm
+                  font-medium
+                  text-slate-700
+                  transition-colors
+                  hover:bg-slate-50
+                  hover:text-[#7A8270]
+                "
               >
                 مسجد نماوا
               </a>
@@ -96,7 +164,17 @@ export default function Header() {
               <a
                 href="/gallery"
                 onClick={() => setIsMenuOpen(false)}
-                className="rounded-xl px-4 py-3 text-sm font-medium text-slate-700 transition-colors hover:bg-slate-50 hover:text-teal-700"
+                className="
+                  rounded-xl
+                  px-4
+                  py-3
+                  text-sm
+                  font-medium
+                  text-slate-700
+                  transition-colors
+                  hover:bg-slate-50
+                  hover:text-[#7A8270]
+                "
               >
                 مسجد نگار
               </a>
@@ -104,7 +182,17 @@ export default function Header() {
               <a
                 href="/research"
                 onClick={() => setIsMenuOpen(false)}
-                className="rounded-xl px-4 py-3 text-sm font-medium text-slate-700 transition-colors hover:bg-slate-50 hover:text-teal-700"
+                className="
+                  rounded-xl
+                  px-4
+                  py-3
+                  text-sm
+                  font-medium
+                  text-slate-700
+                  transition-colors
+                  hover:bg-slate-50
+                  hover:text-[#7A8270]
+                "
               >
                 پژوهش
               </a>
@@ -112,7 +200,17 @@ export default function Header() {
               <a
                 href="/announcements"
                 onClick={() => setIsMenuOpen(false)}
-                className="rounded-xl px-4 py-3 text-sm font-medium text-slate-700 transition-colors hover:bg-slate-50 hover:text-teal-700"
+                className="
+                  rounded-xl
+                  px-4
+                  py-3
+                  text-sm
+                  font-medium
+                  text-slate-700
+                  transition-colors
+                  hover:bg-slate-50
+                  hover:text-[#7A8270]
+                "
               >
                 اطلاعیه‌ها
               </a>
@@ -120,7 +218,17 @@ export default function Header() {
               <a
                 href="/about"
                 onClick={() => setIsMenuOpen(false)}
-                className="rounded-xl px-4 py-3 text-sm font-medium text-slate-700 transition-colors hover:bg-slate-50 hover:text-teal-700"
+                className="
+                  rounded-xl
+                  px-4
+                  py-3
+                  text-sm
+                  font-medium
+                  text-slate-700
+                  transition-colors
+                  hover:bg-slate-50
+                  hover:text-[#7A8270]
+                "
               >
                 درباره ما
               </a>
@@ -128,7 +236,17 @@ export default function Header() {
               <a
                 href="/contact"
                 onClick={() => setIsMenuOpen(false)}
-                className="rounded-xl px-4 py-3 text-sm font-medium text-slate-700 transition-colors hover:bg-slate-50 hover:text-teal-700"
+                className="
+                  rounded-xl
+                  px-4
+                  py-3
+                  text-sm
+                  font-medium
+                  text-slate-700
+                  transition-colors
+                  hover:bg-slate-50
+                  hover:text-[#7A8270]
+                "
               >
                 ارتباط با ما
               </a>

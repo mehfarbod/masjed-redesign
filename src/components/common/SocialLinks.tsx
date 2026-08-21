@@ -83,12 +83,12 @@ export default function SocialLinks() {
             justify-center
             rounded-full
             border
-            border-slate-200
-            text-slate-500
+            border-[#D9D0C4]
+            text-[#756D63]
             transition-all
             duration-200
-            hover:border-teal-700
-            hover:bg-teal-700
+            hover:border-[#70543A]
+            hover:bg-[#70543A]
             hover:text-white
           "
         >

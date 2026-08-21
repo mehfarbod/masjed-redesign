@@ -15,8 +15,8 @@ export default function HeroContent({
   href,
 }: HeroContentProps) {
   return (
-    <div className="absolute inset-x-0 bottom-0  p-6 text-white md:p-8">
-      <span className="text-sm font-medium text-teal-200">
+    <div className="absolute inset-x-0 bottom-0 p-6 text-white md:p-8">
+      <span className="text-sm font-medium text-[#D6BD96]">
         {category}
       </span>
 
@@ -39,7 +39,7 @@ export default function HeroContent({
           font-semibold
           text-white
           transition-colors
-          hover:text-teal-200
+          hover:text-[#D6BD96]
         "
       >
         مشاهده خبر

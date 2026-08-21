@@ -1,0 +1,178 @@
+<svg
+  xmlns="http://www.w3.org/2000/svg"
+  width="600"
+  height="600"
+  viewBox="0 0 600 600"
+  fill="none"
+>
+  <g
+    stroke="#9A8065"
+    stroke-width="1"
+    stroke-linecap="round"
+    stroke-linejoin="round"
+    opacity="0.065"
+  >
+    <!-- Main geometric star -->
+    <path
+      d="
+        M300 55
+        L335 90
+        L385 90
+        L420 125
+        L420 175
+        L455 210
+        L455 260
+        L490 295
+        L455 330
+        L455 380
+        L420 415
+        L420 465
+        L385 500
+        L335 500
+        L300 535
+        L265 500
+        L215 500
+        L180 465
+        L180 415
+        L145 380
+        L145 330
+        L110 295
+        L145 260
+        L145 210
+        L180 175
+        L180 125
+        L215 90
+        L265 90
+        Z
+      "
+    />
+
+    <!-- Inner geometry -->
+    <path
+      d="
+        M300 105
+        L345 150
+        L390 195
+        L345 240
+        L390 285
+        L345 330
+        L390 375
+        L345 420
+        L300 465
+        L255 420
+        L210 375
+        L255 330
+        L210 285
+        L255 240
+        L210 195
+        L255 150
+        Z
+      "
+    />
+
+    <!-- Large diamond -->
+    <path
+      d="
+        M300 155
+        L445 300
+        L300 445
+        L155 300
+        Z
+      "
+    />
+
+    <!-- Inner diamond -->
+    <path
+      d="
+        M300 210
+        L390 300
+        L300 390
+        L210 300
+        Z
+      "
+    />
+
+    <!-- Central square -->
+    <path
+      d="
+        M255 255
+        L345 255
+        L345 345
+        L255 345
+        Z
+      "
+    />
+
+    <!-- Central diamond -->
+    <path
+      d="
+        M300 270
+        L330 300
+        L300 330
+        L270 300
+        Z
+      "
+    />
+
+    <!-- Decorative arcs -->
+    <path
+      d="
+        M300 55
+        C360 115 420 175 480 235
+      "
+    />
+
+    <path
+      d="
+        M300 535
+        C240 475 180 415 120 355
+      "
+    />
+
+    <!-- Top-left ornament -->
+    <path
+      d="
+        M0 0
+        L70 70
+        M0 70
+        L70 0
+      "
+    />
+
+    <!-- Top-right ornament -->
+    <path
+      d="
+        M600 0
+        L530 70
+        M600 70
+        L530 0
+      "
+    />
+
+    <!-- Bottom-left ornament -->
+    <path
+      d="
+        M0 600
+        L70 530
+        M0 530
+        L70 600
+      "
+    />
+
+    <!-- Bottom-right ornament -->
+    <path
+      d="
+        M600 600
+        L530 530
+        M600 530
+        L530 600
+      "
+    />
+
+    <!-- Decorative circles -->
+    <circle cx="300" cy="55" r="4" />
+    <circle cx="545" cy="300" r="4" />
+    <circle cx="300" cy="545" r="4" />
+    <circle cx="55" cy="300" r="4" />
+  </g>
+</svg>
