@@ -1,0 +1,152 @@
+/* ======================================================
+   Tailwind
+====================================================== */
+@import 'tailwindcss';
+
+/* ======================================================
+   Design system files
+====================================================== */
+
+
+/* ======================================================
+   Custom variants
+====================================================== */
+@custom-variant dark (&:where([data-theme='dark'], [data-theme='dark'] *));
+
+/* ======================================================
+   Root tokens (single source of truth)
+====================================================== */
+:root {
+    /* ===== Typography ===== */
+
+    --dynamic-font-family: system-ui, sans-serif;
+    --secondary-font-family: system-ui, sans-serif;
+}
+
+/* ======================================================
+   Base layer
+====================================================== */
+@layer base {
+    /* ===== Theme overrides ===== */
+    [data-theme='light'] {
+        --background-color: #f8f8f8;
+        --background-opacity: 0.7;
+        --background-image: url('/images/frame-light.png');
+
+        --default-color: black;
+    }
+
+    [data-theme='dark'] {
+        --background-color: #0b060510;
+        --background-opacity: 0.1;
+
+        --background-image: url('/images/frame-dark.png');
+
+        --default-color: white;
+    }
+
+    /* ===== Locale overrides ===== */
+    body[data-locale='fa'] {
+        --dynamic-font-family: var(--font-morabba);
+        --secondary-font-family: var(--font-estedad);
+    }
+
+    body[data-locale='en'] {
+        --dynamic-font-family: var(--font-inter);
+        --secondary-font-family: var(--font-inter);
+    }
+
+    /* ===== Base element styles ===== */
+    body {
+        position: relative;
+        font-family: var(--dynamic-font-family), system-ui, sans-serif;
+        background-color: var(--background-color);
+        color: var(--default-color);
+
+        min-height: 100dvh;
+        display: flex;
+        flex-direction: column;
+    }
+}
+
+html {
+  scroll-behavior: smooth;
+}
+/* ======================================================
+   Theme aliases (DX helpers)
+====================================================== */
+@theme inline {
+    --font-title: var(--dynamic-font-family);
+    --font-content: var(--secondary-font-family);
+    --font-inter: var(--font-inter);
+    --font-estedad: var(--font-estedad);
+}
+
+/* ======================================================
+   Global utilities
+====================================================== */
+@layer utilities {
+    /* ===== Scrollbars ===== */
+
+    /* Firefox */
+    * {
+        scrollbar-width: thin;
+        scrollbar-color: #6b7280 transparent;
+    }
+
+    /* WebKit */
+    *::-webkit-scrollbar {
+        width: 6px;
+        height: 6px;
+    }
+
+    *::-webkit-scrollbar-track {
+        background: transparent;
+    }
+
+    *::-webkit-scrollbar-thumb {
+        background-color: rgba(255, 255, 255, 0.25);
+        border-radius: 999px;
+        border: 2px solid transparent;
+        background-clip: padding-box;
+    }
+
+    *::-webkit-scrollbar-thumb:hover {
+        background-color: rgba(255, 255, 255, 0.45);
+    }
+
+    *::-webkit-scrollbar-button {
+        display: none;
+        width: 0;
+        height: 0;
+    }
+
+    /* ===== Helpers ===== */
+    .scrollbar-hide {
+        -ms-overflow-style: none;
+        scrollbar-width: none;
+    }
+
+    .scrollbar-hide::-webkit-scrollbar {
+        display: none;
+    }
+
+    .glass-text {
+        font-size: 90px;
+        font-weight: 800;
+
+        /* stroke */
+        -webkit-text-stroke: 3px #c7c7c7;
+
+        /* glass fill */
+        background: rgba(0, 0, 0, 0.7);
+        /* backdrop-filter: blur(20px);
+    -webkit-backdrop-filter: blur(22px); */
+
+        -webkit-background-clip: text;
+        background-clip: text;
+
+        color: transparent;
+        -webkit-text-fill-color: transparent;
+    }
+}
