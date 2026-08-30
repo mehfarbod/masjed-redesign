@@ -1,3 +1,4 @@
+
 import Image from "next/image";
 import HeroContent from "./HeroContent";
 
@@ -29,7 +30,16 @@ export default function HeroImage({
         sizes="(max-width: 1280px) 100vw, 1280px"
       />
 
-      <div className="absolute inset-0 bg-gradient-to-t from-[#241B14]/80 via-black/25 to-transparent" />
+      <div
+        className="
+          absolute
+          inset-0
+          bg-gradient-to-t
+          from-black/70
+          via-black/20
+          to-transparent
+        "
+      />
 
       <HeroContent
         category={category}

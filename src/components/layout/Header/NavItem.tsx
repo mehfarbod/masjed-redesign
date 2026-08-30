@@ -20,7 +20,7 @@ export default function NavItem({
         text-slate-700
         transition-colors
         duration-200
-        hover:text-[#7A8270]
+        hover:text-[#174C45]
       "
     >
       {label}

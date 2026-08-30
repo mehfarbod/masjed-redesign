@@ -1,119 +1,184 @@
 import Link from "next/link";
-
-import { ArrowLeft, Newspaper } from "lucide-react";
+import {
+ArrowLeft,
+BookOpen,
+GraduationCap,
+Image as ImageIcon,
+Landmark,
+Newspaper,
+Video,
+} from "lucide-react";
 
 type ServiceCardProps = {
-  title: string;
-  description: string;
-  href: string;
-  highlightId?: string;
+title: string;
+description: string;
+href: string;
+highlightId?: string;
+icon: string;
+};
+
+const iconMap = {
+newspaper: Newspaper,
+graduation: GraduationCap,
+video: Video,
+image: ImageIcon,
+book: BookOpen,
+landmark: Landmark,
 };
 
 export default function ServiceCard({
-  title,
-  description,
-  href,
-  highlightId,
+title,
+description,
+href,
+highlightId,
+icon,
 }: ServiceCardProps) {
-  return (
+const Icon = iconMap[icon as keyof typeof iconMap];
+
+return ( <article
+   className="
+     group
+     relative
+     flex
+     min-h-[235px]
+     w-full
+     flex-col
+     overflow-hidden
+     rounded-2xl
+     border
+     border-slate-200
+     bg-white
+     p-6
+     text-right
+     transition-all
+     duration-300
+     hover:-translate-y-1
+     hover:border-[#174C45]/25
+     hover:shadow-[0_12px_30px_rgba(23,76,69,0.07)]
+   "
+ >
+{/* Top accent */} <div
+     aria-hidden="true"
+     className="
+       absolute
+       inset-x-0
+       top-0
+       h-[3px]
+       bg-[#174C45]/10
+       transition-colors
+       duration-300
+       group-hover:bg-[#174C45]
+     "
+   />
+
+
+  {/* Icon */}
+  <div className="flex w-full">
     <div
       className="
-        group
+        ml-auto
         flex
-        h-full
-        flex-col
-        rounded-2xl
+        h-12
+        w-12
+        shrink-0
+        items-center
+        justify-center
+        rounded-xl
         border
-        border-[#E7E0D5]
-        bg-white
-        p-4
+        border-[#174C45]/10
+        bg-[#174C45]/[0.06]
+        text-[#174C45]
         transition-all
         duration-300
-        hover:-translate-y-1
-        hover:border-[#D5CCBF]
-        hover:shadow-md
-        sm:p-5
+        group-hover:border-[#174C45]/20
+        group-hover:bg-[#174C45]
+        group-hover:text-white
       "
     >
-      {/* Icon */}
-      <div
+      {Icon && <Icon size={21} strokeWidth={1.8} />}
+    </div>
+  </div>
+
+  {/* Content */}
+  <div className="mt-5">
+    <h3 className="text-lg font-bold leading-8 text-slate-800">
+      {title}
+    </h3>
+
+    <p className="mt-1.5 text-sm leading-7 text-slate-500">
+      {description}
+    </p>
+  </div>
+
+  {/* Divider */}
+  <div
+    className="
+      mt-auto
+      border-t
+      border-slate-100
+      pt-4
+    "
+  >
+    <div className="flex items-center">
+      <Link
+        href={href}
         className="
-          mb-3
-          flex
-          h-10
-          w-10
-          shrink-0
+          inline-flex
           items-center
-          justify-center
-          rounded-xl
-          bg-[#EEF0E9]
-          text-[#7A8270]
-          transition-colors
-          duration-300
-          group-hover:bg-[#7A8270]
-          group-hover:text-white
-          sm:mb-4
+          gap-2
+          text-sm
+          font-semibold
+          text-[#174C45]
+          transition-all
+          duration-200
+          group-hover:gap-3
         "
       >
-        <Newspaper size={20} />
-      </div>
+        ورود به بخش
+        <ArrowLeft size={16} strokeWidth={1.8} />
+      </Link>
 
-      {/* Content */}
-      <h3 className="mb-1.5 text-base font-bold text-[#302A24] sm:mb-2">
-        {title}
-      </h3>
+      {highlightId && (
+        <>
+          <span
+            aria-hidden="true"
+            className="mx-3 h-3 w-px bg-slate-200"
+          />
 
-      <p className="text-sm leading-6 text-[#756D63]">
-        {description}
-      </p>
-
-      {/* Actions */}
-      <div className="mt-auto flex flex-col gap-1.5 pt-4 sm:gap-2 sm:pt-5">
-        <Link
-          href={href}
-          className="
-            inline-flex
-            items-center
-            justify-between
-            rounded-xl
-            bg-[#70543A]
-            px-3
-            py-2
-            text-sm
-            font-semibold
-            text-white
-            transition-colors
-            hover:bg-[#5A422D]
-            sm:py-2.5
-          "
-        >
-          ورود به بخش
-          <ArrowLeft size={16} />
-        </Link>
-
-        {highlightId && (
           <Link
             href={`/#${highlightId}`}
             className="
-              inline-flex
-              items-center
-              justify-center
-              rounded-xl
-              px-3
-              py-1.5
               text-xs
               font-medium
-              text-[#756D63]
+              text-slate-400
               transition-colors
-              hover:bg-[#EEF0E9]
-              hover:text-[#70543A]
-              sm:py-2
+              hover:text-[#315A73]
             "
           >
             آخرین مطلب
           </Link>
-        )}
-      </div>
+        </>
+      )}
     </div>
-  );
+  </div>
+
+  {/* Bottom accent */}
+  <div
+    aria-hidden="true"
+    className="
+      absolute
+      bottom-0
+      right-0
+      h-[2px]
+      w-0
+      bg-[#174C45]
+      transition-all
+      duration-300
+      group-hover:w-full
+    "
+  />
+</article>
+
+
+);
 }

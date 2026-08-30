@@ -26,6 +26,7 @@ export default function DropdownItem({
         hover:bg-slate-50
       "
     >
+      {/* Icon */}
       <div
         className="
           flex
@@ -35,16 +36,18 @@ export default function DropdownItem({
           items-center
           justify-center
           rounded-lg
-          bg-[#EEF0E9]
-          text-[#7A8270]
-          transition-colors
-          group-hover:bg-[#7A8270]
+          bg-[#E8EEF2]
+          text-[#315A73]
+          transition-all
+          duration-200
+          group-hover:bg-[#315A73]
           group-hover:text-white
         "
       >
         <Icon size={18} />
       </div>
 
+      {/* Content */}
       <div>
         <h4 className="font-medium text-slate-800">
           {item.label}

@@ -22,7 +22,8 @@ export default function Dropdown({
           font-medium
           text-slate-700
           transition-colors
-          hover:text-[#7A8270]
+          duration-200
+          hover:text-[#174C45]
         "
       >
         {item.label}
@@ -30,7 +31,6 @@ export default function Dropdown({
         <ChevronDown
           size={16}
           className="
-            z-10
             transition-transform
             duration-200
             group-hover:rotate-180
@@ -44,8 +44,8 @@ export default function Dropdown({
           absolute
           right-0
           top-full
-          z-10
-          mt-0
+          z-50
+          mt-2
           w-80
           rounded-2xl
           border

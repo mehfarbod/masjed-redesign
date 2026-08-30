@@ -5,24 +5,35 @@
 ====================================================== */
 
 :root {
-  /* Colors */
-  --background: #fcfaf7;
-  --foreground: #302a24;
+  /* Core */
+  --background: #f7f3ea;
+  --foreground: #293331;
 
   --surface: #ffffff;
 
-  --primary: #70543a;
-  --primary-hover: #5a422d;
+  /* Brand */
+  --primary: #174c45;
+  --primary-hover: #123d38;
 
-  --sage: #71806b;
-  --sage-light: #e8eadd;
+  /* Secondary */
+  --sage: #78927d;
+  --sage-light: #e8eee9;
 
-  --brass: #a68a64;
+  /* Iranian Accent */
+  --persian-blue: #315a73;
+  --persian-blue-light: #e8eef2;
 
-  --text-primary: #302a24;
-  --text-secondary: #756d63;
+  /* Heritage */
+  --sand: #d9c8a8;
+  --brown: #70543a;
+  --gold: #b39455;
+  --clay: #b77b5c;
 
   /* Typography */
+  --text-primary: #293331;
+  --text-secondary: #756d63;
+  --text-muted: #8b8580;
+
   --font-site: var(--font-vazirmatn), system-ui, sans-serif;
 }
 

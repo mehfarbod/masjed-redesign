@@ -29,8 +29,10 @@ export default function Header() {
               shrink-0
               rounded-lg
               p-2
+              text-slate-600
               transition-colors
               hover:bg-slate-100
+              hover:text-[#315A73]
               md:block
             "
             aria-label="جستجو"
@@ -44,8 +46,10 @@ export default function Header() {
               className="
                 rounded-lg
                 p-2
+                text-slate-600
                 transition-colors
                 hover:bg-slate-100
+                hover:text-[#315A73]
               "
               aria-label="جستجو"
             >
@@ -57,8 +61,10 @@ export default function Header() {
               className="
                 rounded-lg
                 p-2
+                text-slate-600
                 transition-colors
                 hover:bg-slate-100
+                hover:text-[#315A73]
               "
               aria-label={isMenuOpen ? "بستن منو" : "باز کردن منو"}
             >
@@ -83,7 +89,7 @@ export default function Header() {
                   text-slate-700
                   transition-colors
                   hover:bg-slate-50
-                  hover:text-[#7A8270]
+                  hover:text-[#174C45]
                 "
               >
                 خانه
@@ -101,7 +107,7 @@ export default function Header() {
                   text-slate-700
                   transition-colors
                   hover:bg-slate-50
-                  hover:text-[#7A8270]
+                  hover:text-[#174C45]
                 "
               >
                 مسجد خبر
@@ -119,7 +125,7 @@ export default function Header() {
                   text-slate-700
                   transition-colors
                   hover:bg-slate-50
-                  hover:text-[#7A8270]
+                  hover:text-[#174C45]
                 "
               >
                 مسجد فرهنگ
@@ -137,7 +143,7 @@ export default function Header() {
                   text-slate-700
                   transition-colors
                   hover:bg-slate-50
-                  hover:text-[#7A8270]
+                  hover:text-[#174C45]
                 "
               >
                 مسجد آموز
@@ -155,7 +161,7 @@ export default function Header() {
                   text-slate-700
                   transition-colors
                   hover:bg-slate-50
-                  hover:text-[#7A8270]
+                  hover:text-[#174C45]
                 "
               >
                 مسجد نماوا
@@ -173,7 +179,7 @@ export default function Header() {
                   text-slate-700
                   transition-colors
                   hover:bg-slate-50
-                  hover:text-[#7A8270]
+                  hover:text-[#174C45]
                 "
               >
                 مسجد نگار
@@ -191,7 +197,7 @@ export default function Header() {
                   text-slate-700
                   transition-colors
                   hover:bg-slate-50
-                  hover:text-[#7A8270]
+                  hover:text-[#174C45]
                 "
               >
                 پژوهش
@@ -209,7 +215,7 @@ export default function Header() {
                   text-slate-700
                   transition-colors
                   hover:bg-slate-50
-                  hover:text-[#7A8270]
+                  hover:text-[#174C45]
                 "
               >
                 اطلاعیه‌ها
@@ -227,7 +233,7 @@ export default function Header() {
                   text-slate-700
                   transition-colors
                   hover:bg-slate-50
-                  hover:text-[#7A8270]
+                  hover:text-[#174C45]
                 "
               >
                 درباره ما
@@ -245,7 +251,7 @@ export default function Header() {
                   text-slate-700
                   transition-colors
                   hover:bg-slate-50
-                  hover:text-[#7A8270]
+                  hover:text-[#174C45]
                 "
               >
                 ارتباط با ما
