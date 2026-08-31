@@ -1,3 +1,4 @@
+
 "use client";
 
 import { Menu, Search, X } from "lucide-react";
@@ -11,7 +12,7 @@ export default function Header() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
 
   return (
-    <header className="border-b border-slate-200 bg-white">
+    <header className="border-b border-[#D9D2C6] bg-[#FCFAF5]">
       <Container>
         <div className="flex h-18 items-center justify-between gap-4">
           {/* Logo */}
@@ -31,7 +32,7 @@ export default function Header() {
               p-2
               text-slate-600
               transition-colors
-              hover:bg-slate-100
+              hover:bg-[#174C45]/[0.07]
               hover:text-[#315A73]
               md:block
             "
@@ -48,7 +49,7 @@ export default function Header() {
                 p-2
                 text-slate-600
                 transition-colors
-                hover:bg-slate-100
+                hover:bg-[#174C45]/[0.07]
                 hover:text-[#315A73]
               "
               aria-label="جستجو"
@@ -63,7 +64,7 @@ export default function Header() {
                 p-2
                 text-slate-600
                 transition-colors
-                hover:bg-slate-100
+                hover:bg-[#174C45]/[0.07]
                 hover:text-[#315A73]
               "
               aria-label={isMenuOpen ? "بستن منو" : "باز کردن منو"}
@@ -75,7 +76,7 @@ export default function Header() {
 
         {/* Mobile Menu */}
         {isMenuOpen && (
-          <div className="border-t border-slate-100 py-4 md:hidden">
+          <div className="border-t border-[#E8E2D8] py-4 md:hidden">
             <nav className="flex flex-col">
               <a
                 href="/"
@@ -88,7 +89,7 @@ export default function Header() {
                   font-medium
                   text-slate-700
                   transition-colors
-                  hover:bg-slate-50
+                  hover:bg-[#174C45]/[0.06]
                   hover:text-[#174C45]
                 "
               >
@@ -106,7 +107,7 @@ export default function Header() {
                   font-medium
                   text-slate-700
                   transition-colors
-                  hover:bg-slate-50
+                  hover:bg-[#174C45]/[0.06]
                   hover:text-[#174C45]
                 "
               >
@@ -124,7 +125,7 @@ export default function Header() {
                   font-medium
                   text-slate-700
                   transition-colors
-                  hover:bg-slate-50
+                  hover:bg-[#174C45]/[0.06]
                   hover:text-[#174C45]
                 "
               >
@@ -142,7 +143,7 @@ export default function Header() {
                   font-medium
                   text-slate-700
                   transition-colors
-                  hover:bg-slate-50
+                  hover:bg-[#174C45]/[0.06]
                   hover:text-[#174C45]
                 "
               >
@@ -160,7 +161,7 @@ export default function Header() {
                   font-medium
                   text-slate-700
                   transition-colors
-                  hover:bg-slate-50
+                  hover:bg-[#174C45]/[0.06]
                   hover:text-[#174C45]
                 "
               >
@@ -178,7 +179,7 @@ export default function Header() {
                   font-medium
                   text-slate-700
                   transition-colors
-                  hover:bg-slate-50
+                  hover:bg-[#174C45]/[0.06]
                   hover:text-[#174C45]
                 "
               >
@@ -196,7 +197,7 @@ export default function Header() {
                   font-medium
                   text-slate-700
                   transition-colors
-                  hover:bg-slate-50
+                  hover:bg-[#174C45]/[0.06]
                   hover:text-[#174C45]
                 "
               >
@@ -214,7 +215,7 @@ export default function Header() {
                   font-medium
                   text-slate-700
                   transition-colors
-                  hover:bg-slate-50
+                  hover:bg-[#174C45]/[0.06]
                   hover:text-[#174C45]
                 "
               >
@@ -232,7 +233,7 @@ export default function Header() {
                   font-medium
                   text-slate-700
                   transition-colors
-                  hover:bg-slate-50
+                  hover:bg-[#174C45]/[0.06]
                   hover:text-[#174C45]
                 "
               >
@@ -250,7 +251,7 @@ export default function Header() {
                   font-medium
                   text-slate-700
                   transition-colors
-                  hover:bg-slate-50
+                  hover:bg-[#174C45]/[0.06]
                   hover:text-[#174C45]
                 "
               >
